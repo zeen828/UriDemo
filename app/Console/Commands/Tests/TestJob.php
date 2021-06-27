@@ -46,10 +46,10 @@ class TestJob extends Command
 
         switch ($option) {
             case 'redis':
-                $key = 'tests:id:1';
-                Redis::set($key, 'Taylor');
+                $key = 'tests:id:12';
+                //Redis::set($key, 'Taylor');
                 $test = Redis::get($key);
-                print_r($test);
+                var_dump($test);
                 break;
             default:
                 break;

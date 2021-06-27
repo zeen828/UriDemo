@@ -13,10 +13,7 @@ class UriLog extends Model
     protected $table = 'uri_log';
     // 欄位名稱
     protected $fillable = [
-        'name', 'code', 'logo', 'description', 'description_zh', 'website', 'currency',
-        'sort',
-        // 狀態
-        'status',
+        'url', 'uri', 'srt', 'ip',
     ];
     // 隱藏不顯示欄位
     // protected $hidden = [];

@@ -50,3 +50,12 @@ php artisan serve
 # PHP8起一個服務
 php -S 127.0.0.1:3000
 ```
+
+## 單元測試
+1. 連線測試
+php artisan make:test UriIndexTest
+php artisan make:test UriPostTest
+php artisan make:test GoSrtTest
+php artisan make:test GoSrtInfoTest
+1. 資料寫入測試
+2. 唯一字串寫入

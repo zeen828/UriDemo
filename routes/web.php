@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('uri/index', [\App\Http\Controllers\Uri\UriController::class, 'index']);
-Route::get('uri/form', [\App\Http\Controllers\Uri\UriController::class, 'form']);
-Route::get('uri/info', [\App\Http\Controllers\Uri\UriController::class, 'info']);
+Route::get('/uri/index', [\App\Http\Controllers\Uri\UriController::class, 'index'])->name('uri.index');
+Route::post('/uri/post', [\App\Http\Controllers\Uri\UriController::class, 'post'])->name('uri.post');
+
+Route::get('/go/{srt}', [\App\Http\Controllers\Uri\UriController::class, 'go'])->name('uri.go');
+Route::get('/go/{srt}/info', [\App\Http\Controllers\Uri\UriController::class, 'info'])->name('uri.go.info');

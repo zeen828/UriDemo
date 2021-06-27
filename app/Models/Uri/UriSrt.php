@@ -13,10 +13,7 @@ class UriSrt extends Model
     protected $table = 'uri_srt';
     // 欄位名稱
     protected $fillable = [
-        'name', 'code', 'logo', 'description', 'description_zh', 'website', 'currency',
-        'sort',
-        // 狀態
-        'status',
+        'srt', 'url', 'access', 'status', 'expire_at',
     ];
     // 隱藏不顯示欄位
     // protected $hidden = [];
